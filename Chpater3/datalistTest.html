@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 10pt;
+            width: 80%;
+            background-color: white;
+            margin: auto;
+        }
+
+        section {
+            margin-top: 10px;
+            width: 270px;
+            padding: 15px;
+        }
+
+        form {
+            border: 1px solid black;
+            width: 300px;
+            padding: 10px;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+            size: 20pt;
+        }
+
+        label {
+            color: blueviolet;
+            font-size: 10pt;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        input[disabled] {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function goto() {
+            var ml = "http://" + document.getElementById("ml").value;
+            open(ml);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <form oninput="calulate()" action="" method="post" name="myForm" id="myForm">
+        <fieldset>
+            <legend>이동테스트</legend>
+
+            <label>GO to</label> http://
+            <input type="text" id="ml" list="myList">
+            <datalist id="myList">
+                <option value="comic.naver.com/webtoon/weekday.nhn"></option>
+                <option value="webtoon.daum.net/"></option>
+                <option value="www.lezhin.com/ko"></option>
+            </datalist>
+            <input type="submit" id="submit" onclick="goto()" value="이동하기">
+        </fieldset>
+
+    </form>
+
+    <p>
+        <details open>
+            <summary>과일 사과 레포트</summary>
+            사과는 장미 종 맬 러스 domestica, 사과 나무의 pomaceous 과일입니다.
+            <ul>
+                <li>만든 날짜 : 2018년 4월 11일 수요일, 오전 11시 59분</li>
+                <li>만든이 : choioi</li>
+            </ul>
+        </details>
+    </p>
+
+    <pre><code>function Panel(element, canClose, closeHandler){
+        this.element = elemnet;
+        this.canClose = canClose;
+        this.closeHandler = function() {if (closeHandler) closeHandler()};
+    }
+    </code></pre>
+
+    <p>컴퓨터를 하던 중
+        <samp>the system encountered a problem (#707)</samp>라는 에러 메세지가 떴다</p>
+
+    <p>
+        <var>n</var>의 수만큼 곱하시오</p>
+</body>
+
+</html>

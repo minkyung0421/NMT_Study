@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            /*전체선택자보다 우선*/
+            color: green;
+        }
+
+        h2,
+        h3 {
+            /*그룹선택자*/
+            font-style: italic;
+        }
+
+        h4 em {
+            /*하위선택자*/
+            color: purple;
+        }
+
+        div span {
+            background-color: plum;
+        }
+
+        div.yellow-box {
+            /*종속선택자*/
+            background-color: yellow;
+        }
+
+        div#orange-box {
+            /*종석선택자*/
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <em>css연습</em>
+    <h1>h1태그!</h1>
+
+    <h2>h2태그입니다</h2>
+    <h3>h3태그입니다</h3>
+
+    <h4>i am h4Tag
+        <em>nice</em> day </h4>
+
+    <div class="yellow-box">
+        <span>노란색박스</span>
+    </div>
+    <div id="orange-box">
+        <span>오렌지박스</span>
+    </div>
+    <div id="purple-box">
+        <span>보라박스</span>
+    </div>
+
+</body>
+
+</html>

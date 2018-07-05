@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>scoped 연습</title>
+    <style>
+        h1{
+            font-size: 3em; color: coral;
+        }
+        p{
+            font-size: 2em; color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <section> <!--h태그를 쓰려면 section을 나누는게 좋다!-->
+        <h1>나루토</h1>  
+        <p>나뭇잎마을의 구미인주력을 가진 나루토가 호카게가 되기 위해 열심히 수련하는 이야기</p>
+    </section>
+    <section>    
+        <style scoped>
+            h1{
+            font-size: 30px; color:chocolate;
+            }
+            p{
+            font-size: 3em; color:cadetblue;
+            }
+        </style>
+        <h1>원피스</h1>
+        <p>해적왕이 되기 위해 루피가 친구들과 함께 배를 타는 이야기</p>
+    </section>
+</body>
+</html>

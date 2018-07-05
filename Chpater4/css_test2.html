@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* body em{ color: red; } */
+
+        /*하위결합자*/
+
+        body>em {
+            color: red;
+        }
+
+        /*자식결합자*/
+
+        input[required] {
+            background-color: mediumpurple;
+        }
+
+        /*속성결합자*/
+
+        a:link {
+            color: lightcoral;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>i am h4Tag
+        <em>nice</em> day </h4>
+    필수입력
+    <input type="text" required>
+
+    <ul>
+        <li>
+            <a href="#">CSS</a>
+        </li>
+        <li>HTML</li>
+    </ul>
+    <ul>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Javascript</li>
+    </ul>
+    <ul>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Javascript</li>
+    </ul>
+
+</body>
+
+</html>
