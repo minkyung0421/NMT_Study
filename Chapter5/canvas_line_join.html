@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Canvas Test</h1>
+        <canvas id = "canvas" width="1500" height="800" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas Tag.
+        </canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+    ctx.lineWidth = 20;
+       ctx.beginPath();
+       ctx.moveTo(300, 300);
+       ctx.lineTo(400,200);
+       ctx.lineTo(500,300);
+       ctx.lineJoin = "bevel";
+       ctx.stroke();
+
+       ctx.beginPath();
+       ctx.moveTo(600,300);
+       ctx.lineTo(700,200);
+       ctx.lineTo(800,300);
+       ctx.lineJoin = "round";
+       ctx.stroke();
+
+       ctx.beginPath();
+       ctx.moveTo(900, 300);
+       ctx.lineTo(1000, 200);
+       ctx.lineTo(1100, 300);
+       ctx.lineJoin = "miter";
+       ctx.stroke();
+
+
+       
+    </script>
+</body>
+</html>

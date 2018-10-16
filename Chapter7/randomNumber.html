@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <Button id = "number1" name = "number1">1부터 10사이의 무작위 수</Button>
+        <Button id = "number2" name = "number2">1부터 100사이의 무작위 수</Button>
+        <p id = "result" style = "font-size: 20pt; color: mediumpurple"></p>
+
+    <script>
+
+      var button1 = document.getElementById("number1");
+      var button2 = document.getElementById("number2");
+      var result = document.getElementById("result");
+      var su;
+
+       button1.onclick = function() {
+            su = (Math.random() * 10) + 1;
+            su = parseInt(su);
+            result.innerHTML = su;
+        }
+
+        button2.onclick = function(){
+            su = (Math.random() * 100) + 1;
+            su = parseInt(su);
+            result.innerHTML = su;
+        }
+    
+       
+
+    </script>
+    
+</body>
+</html>

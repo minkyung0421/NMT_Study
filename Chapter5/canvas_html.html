@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width=800 height=600 id ="canvas"></canvas>
+
+    <script>
+        var canvas = document.querySelector("canvas");
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = "#E34D25";
+
+        ctx.beginPath();
+        ctx.moveTo(25, 25);
+        ctx.lineTo(300, 25);
+        ctx.lineTo(35, 350);
+        ctx.fill();
+
+        //ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(35, 230);
+        ctx.lineTo(35, 350);
+        ctx.lineTo(160, 380);
+        ctx.lineJoin = "round";
+        ctx.fill();
+
+       ctx.beginPath();
+        ctx.moveTo(160, 380);
+        ctx.lineTo(275, 360);
+        ctx.lineTo(300, 22);
+        ctx.lineJoin = "round";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(60, 280);
+        ctx.lineTo(160, 380);
+        ctx.lineTo(297, 30);
+        ctx.lineJoin = "round";
+        ctx.fill();
+
+        ctx.closePath();
+
+        ctx.fillStyle = "#F06529";
+
+        ctx.beginPath();
+        ctx.moveTo(160, 365);
+        ctx.lineTo(265, 350);
+        ctx.lineTo(290, 36);
+        ctx.lineJoin = "round";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(290, 38);
+        ctx.lineTo(170, 40);
+        ctx.lineTo(160, 365);
+        ctx.fill();
+
+        ctx.closePath();
+
+       ctx.strokeStyle = '#ffffff';
+
+        ctx.beginPath();
+        ctx.moveTo(170,100);
+        ctx.lineTo(260, 100);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(255, 170);
+        ctx.lineTo(80, 170);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(222, 276);
+        ctx.lineTo(238, 180);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+          ctx.beginPath();
+        ctx.moveTo(233, 262);
+        ctx.lineTo(158, 290);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+
+        ctx.closePath();
+
+      ctx.strokeStyle = '#EBEBEB';
+      
+         ctx.beginPath();
+        ctx.moveTo(65,100);
+        ctx.lineTo(170, 100);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(86,160);
+        ctx.lineTo(82, 100);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(165,170);
+        ctx.lineTo(68, 170);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(88,266);
+        ctx.lineTo(168, 289);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(99,280);
+        ctx.lineTo(87, 220);
+        ctx.lineWidth = 35;
+        ctx.stroke();
+
+        ctx.closePath();
+        
+        ctx.fillStyle = "#ffffff";
+
+        ctx.beginPath();
+        ctx.moveTo(163, 268);
+        ctx.lineTo(200, 280);
+        ctx.lineTo(163, 306);
+        ctx.lineJoin = "round";
+        ctx.lineWidth = 1;
+         ctx.fill();
+
+        
+
+      
+        
+
+    </script>
+</body>
+</html>

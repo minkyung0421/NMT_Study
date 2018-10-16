@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src = "rrr.jpg" id = "img1">
+    <canvas id = "canvas" width = "1200" height="800" style = "border:1px dotted black"></canvas>
+
+    <script>
+        var canvas = document.querySelector("canvas"); //querySelector->태그이름 가져오기(태그이름 하나 짜리만)
+        var ctx = canvas.getContext("2d");
+
+
+        var img = document.getElementById("img1");
+        ctx.drawImage(img1, 100, 100);
+
+        
+        //1. img요소의 DOM객체 생성
+        var img = new Image();
+
+        //2. 이미지 로딩 시작
+        img.src = "Chapter5/rrr.jpg";
+
+        //3. 캔버스에 출력
+        img.onload = function(){
+            ctx.drawImage(img, 100, 100);
+        }
+    </script>
+</body>
+</html>

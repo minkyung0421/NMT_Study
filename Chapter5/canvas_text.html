@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>선 그리기</h1></header>
+    <canvas width="1200" height="800" id = "canvas" style = "border: 1px dotted black"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var cvas = canvas.getContext("2d");
+
+        cvas.font = "30px Gothic";
+        cvas.fillStyle = "rgba(0,0,255,0.8)";
+
+        cvas.shadowColor = "rgba(30,30,30,0.9)";
+        cvas.shadowOffsetX = "10";
+        cvas.shadowOffsetY = "10"; 
+        cvas.shadowBlur = "15";
+
+        cvas.textAlign = "start";
+        cvas.fillText("아네모네", 150, 30);
+
+        cvas.textAlign = "end";
+        cvas.fillText("아네모네", 150, 70);
+
+        cvas.textAlign = "left";
+        cvas.fillText("아네모네", 150, 110);
+
+        cvas.textAlign = "center";
+        cvas.fillText("아네모네", 150, 150);
+
+        cvas.textAlign = "right";
+        cvas.fillText("아네모네", 150, 190);
+
+         cvas.textAlign = "center";
+         cvas.strokeStyle = "#000000";
+        cvas.strokeText("아네모네", 150, 240);
+    </script>
+</body>
+</html>
